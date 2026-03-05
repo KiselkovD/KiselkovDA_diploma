@@ -27,8 +27,8 @@
 \newcommand{\supervisorPosition}{\my@title@supervisorPosition@ru}
 %\newcommand{\consultant}{\my@title@consultant@ru}
 %\newcommand{\consultantPosition}{\my@title@consultantPosition@ru}
-%\newcommand{\reviewer}{\my@title@reviewer@ru}
-%\newcommand{\reviewerPosition}{\my@title@reviewerPosition@ru}
+\newcommand{\reviewer}{\my@title@reviewer@ru}
+\newcommand{\reviewerPosition}{\my@title@reviewerPosition@ru}
 \newcommand{\defenseYear}{\my@title@year@ru}
 
 \makeatother
@@ -56,7 +56,7 @@
     % Консультанта может и не быть. Должна быть указана должность или ученая степень
     %\textbf{Консультант:}  \consultantPosition~\consultant \\
     % Для учебной практики не обязателен. Должна быть указана должность или ученая степень
-    %\textbf{Рецензент:} \reviewerPosition~\reviewer \\
+    \textbf{Рецензент:} \reviewerPosition~\reviewer \\
     % TODO: добавить условие на включение рецензента в зависимости от вида отчета
   }
   \makeatother
@@ -137,37 +137,47 @@
   \end{Verbatim}
 }
 
+% FIX: Adjusted column widths and font sizes to avoid overfull boxes
 \begin{frame}%[fragile]
   \frametitle{Новый алгоритм}
   \framesubtitle{Иллюстративные возможности: таблицы, картинки, код}
-  % Задается ширина столбцов
   \begin{columns}[T]
     \begin{column}[t]{.4\textwidth}
-      \begin{minipage}{2in} \CodeExample         \end{minipage}
+      % Use \columnwidth for minipage width, and reduce font size for verbatim
+      \begin{minipage}{\columnwidth}
+        \tiny\CodeExample
+      \end{minipage}
+
+      \vspace{2ex}
       Аппроксимация:\\
       \includegraphics[width=2.5cm]{figures/in3.pdf}
 
+      \vspace{2ex}
       Грамматика:
-      {\begin{align*}
-        start &  &  & \Coloneq &  & s                                              \\
-        s     &  &  & \Coloneq &  & \mbox{\texttt{LBR }} s \mbox{\texttt{ RBR }} s \\
-        s     &  &  & \Coloneq &  & \varepsilon
+      % FIX: Use \coloneqq (from mathtools) instead of \Coloneq, and reduce font size
+      {\footnotesize
+      \begin{align*}
+        start & \coloneqq  s                                              \\
+        s     & \coloneqq  \mbox{\texttt{LBR }} s \mbox{\texttt{ RBR }} s \\
+        s     & \coloneqq  \varepsilon
       \end{align*}}
     \end{column}
-    %\hspace{1cm}
     \begin{column}[T]{.6\textwidth}
       \vspace{-2em}
-      \includegraphics[width=1\textwidth]{figures/out3.pdf}
+      \includegraphics[width=\columnwidth]{figures/out3.pdf}
     \end{column}
   \end{columns}
 \end{frame}
 
+% FIX: Reduced spacing between theorems to fix overfull \vbox
 \begin{frame}
   \frametitle{Доказательство корректности алгоритма}
   {\small Формулировки утверждений. Идеи доказательств проговариваются устно.}
+
   \begin{rutheorem}[Пифагора: геометрическая формулировка]
     В прямоугольном треугольнике площадь квадрата, построенного на гипотенузе, равна сумме площадей квадратов, построенных на катетах.
   \end{rutheorem}
+  \vspace{-2pt}
 
   \begin{rutheorem}[Пифагора: алгебраическая формулировка]
     В прямоугольном треугольнике квадрат длины гипотенузы равен сумме квадратов длин катетов.
@@ -175,6 +185,7 @@
     То есть, если обозначить длину гипотенузы треугольника через $c$, а длины катетов
     через $a$ и $b$, получим верное равенство: $a^2 + b^2 = c^2$.
   \end{rutheorem}
+  \vspace{-2pt}
 
   \begin{rutheorem}[Обратная теорема Пифагора]
     Для всякой тройки положительных чисел $a$, $b$ и $c$, такой, что $a^2 + b^2 = c^2$, существует прямоугольный треугольник с катетами $a$ и $b$ и гипотенузой $c$.
@@ -203,6 +214,7 @@
   \end{itemize}
 \end{frame}
 
+% FIX: Use \textwidth instead of fixed 13cm to avoid overfull hbox
 \begin{frame}[t]
   \frametitle{Результаты экспериментального исследования}
   \begin{itemize}
@@ -212,7 +224,7 @@
             \item У иллюстраций должны быть подписи, у графиков~--- легенда, подписи к осям, например:
           \end{itemize}
   \end{itemize}
-  \includegraphics[width=13cm]{figures/dist.png}
+  \includegraphics[width=\textwidth]{figures/dist.png}
 \end{frame}
 
 \begin{frame}
