@@ -431,7 +431,7 @@
             % fancyhdr set height of the top/bottom headers automatically
             % so set them to zero to be sure that he does it
             \setlength{\headheight}{0pt}
-            \setlength{\footskip}{0pt}
+            \setlength{\footskip}{30pt}
             \maketitleru\addtocounter{titlepages}{1}
         }
         \ifthenelse{\isundefined{\my@title@title@en} \OR \equal{\my@title@type@ru}{coursework} \OR \equal{\my@title@type@ru}{practice} \OR \equal{\my@title@type@ru}{production} \OR \equal{\my@title@type@ru}{prediploma}}{}{
@@ -439,7 +439,7 @@
             % but on this page the headers' height might be different
             % so set them to zero again in order to make fancyhdr to do it
             \setlength{\headheight}{0pt}
-            \setlength{\footskip}{0pt}
+            \setlength{\footskip}{30pt}
             \maketitleen\addtocounter{titlepages}{1}
         }
     \end{spacing}

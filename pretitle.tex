@@ -12,8 +12,8 @@
 \define@key[ru]{mytitle}{supervisorPosition}{\def\my@title@supervisorPosition@ru{#1}}
 \define@key[ru]{mytitle}{reviewer}{\def\my@title@reviewer@ru{#1}}
 \define@key[ru]{mytitle}{reviewerPosition}{\def\my@title@reviewerPosition@ru{#1}}
-\define@key[ru]{mytitle}{consultant}{\def\my@title@consultant@ru{#1}}
-\define@key[ru]{mytitle}{consultantPosition}{\def\my@title@consultantPosition@ru{#1}}
+%\define@key[ru]{mytitle}{consultant}{\def\my@title@consultant@ru{#1}}
+%\define@key[ru]{mytitle}{consultantPosition}{\def\my@title@consultantPosition@ru{#1}}
 \define@key[ru]{mytitle}{year}{\def\my@title@year@ru{#1}}
 \define@key[ru]{mytitle}{specialty}{\def\my@title@specialty@ru{#1}}
 \define@key[ru]{mytitle}{programme}{\def\my@title@programme@ru{#1}}
@@ -30,8 +30,8 @@
 \define@key[en]{mytitle}{supervisorPosition}{\def\my@title@supervisorPosition@en{#1}}
 \define@key[en]{mytitle}{reviewer}{\def\my@title@reviewer@en{#1}}
 \define@key[en]{mytitle}{reviewerPosition}{\def\my@title@reviewerPosition@en{#1}}
-\define@key[en]{mytitle}{consultant}{\def\my@title@consultant@en{#1}}
-\define@key[en]{mytitle}{consultantPosition}{\def\my@title@consultantPosition@en{#1}}
+%\define@key[en]{mytitle}{consultant}{\def\my@title@consultant@en{#1}}
+%\define@key[en]{mytitle}{consultantPosition}{\def\my@title@consultantPosition@en{#1}}
 \define@key[en]{mytitle}{year}{\def\my@title@year@en{#1}}
 \define@key[en]{mytitle}{specialty}{\def\my@title@specialty@en{#1}}
 \define@key[en]{mytitle}{programme}{\def\my@title@programme@en{#1}}
@@ -40,29 +40,29 @@
 \define@choicekey*[en]{mytitle}{kind}{solution,experiment,production,comparison,theoretical}{\def\my@title@kind@en{#1}}
 
 \newcommand{\filltitle}[2]{
-    %% Значения по умолчанию для обоих языков
-    \ifthenelse{\equal{#1}{ru}}
-    {
-        \presetkeys[#1]{mytitle}{
-            year = {\the\year},
-            type = {practice},
-            reviewer = {},
-            consultant = {},
-            profile = {}
-        }{}
-    }
-    {}
-    \ifthenelse{\equal{#1}{en}}
-    {
-        \presetkeys[#1]{mytitle}{
-            year = {\the\year},
-            type = {practice},
-            reviewer = {},
-            consultant = {},
-            profile = {}
-        }{}
-    }
-    {}
-    \setkeys[#1]{mytitle}{#2}
+  %% Значения по умолчанию для обоих языков
+  \ifthenelse{\equal{#1}{ru}}
+  {
+    \presetkeys[#1]{mytitle}{
+      year = {\the\year},
+      type = {practice},
+      reviewer = {},
+      %consultant = {},
+      profile = {}
+    }{}
+  }
+  {}
+  \ifthenelse{\equal{#1}{en}}
+  {
+    \presetkeys[#1]{mytitle}{
+      year = {\the\year},
+      type = {practice},
+      reviewer = {},
+      %consultant = {},
+      profile = {}
+    }{}
+  }
+  {}
+  \setkeys[#1]{mytitle}{#2}
 }
 

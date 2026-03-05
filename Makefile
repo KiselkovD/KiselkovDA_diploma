@@ -1,6 +1,6 @@
 VKR ?= vkr
 TALK ?= talk
-ENGINE ?= lualatex # Only `xelatex` or `lualatex` are allowed here
+ENGINE ?= xelatex # Only `xelatex` or `lualatex` are allowed here
 
 .PHONY: $(NAME).pdf clean dist-clean format depext depext-deb
 .SUFFIXES: .pdf .tex
