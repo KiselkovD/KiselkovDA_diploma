@@ -7,6 +7,33 @@ ENGINE ?= xelatex # Only `xelatex` or `lualatex` are allowed here
 
 all: $(VKR).pdf $(TALK).pdf
 
+SRCS = $(sort $(wildcard [0-9][0-9][0-9]_*.tex))
+# Цель: собрать все куски в один файл __vkr.tex
+__vkr.tex: $(SRCS)
+	@echo "Собираю $(words $^) файлов в $@"
+	@rm -f $@
+	@for f in $^; do \
+		echo "% __SPLIT_MARKER__ $$f" >> $@; \
+		cat "$$f" >> $@; \
+		echo "" >> $@; \
+	done
+
+# Цель: разобрать __vkr.tex обратно на файлы с суффиксом '2'
+split: __vkr.tex
+	@echo "Разделяю $< на отдельные файлы (суффикс '2')"
+	@awk 'BEGIN { out = "" } \
+	/^% __SPLIT_MARKER__ / { \
+		if (out) close(out); \
+		split($$0, a, " "); \
+		orig = a[3]; \
+		out = gensub(/\.tex$$/, "2.tex", "g", orig); \
+		print "  Создаю " out; \
+		next; \
+	} \
+	out { print > out }' $<
+
+# ----------------------------------------------------------------------
+
 %.pdf: %.tex *.bib *.tex
 	latexmk -$(ENGINE) -synctex=1 -interaction=nonstopmode -file-line-error -shell-escape $<
 

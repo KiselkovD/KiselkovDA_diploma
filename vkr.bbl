@@ -1,0 +1,163 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\hbox to.8em{--\hss--}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em\fi
+\cyrdash\hskip.2em\ignorespaces}
+
+\bibitem{ARM}
+\selectlanguageifdefined{english}
+ARM architecture family. \BibDash
+\newblock URL: \BibUrl{https://en.wikipedia.org/wiki/ARM_architecture_family}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{BusyBox}
+\selectlanguageifdefined{english}
+BusyBox: швейцарский нож для встраиваемых
+  Linux-систем. \BibDash
+\newblock URL: \BibUrl{https://samag.ru/archive/article/1908} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{CPM}
+\selectlanguageifdefined{english}
+CP/M. \BibDash
+\newblock URL: \BibUrl{https://sysadminmosaic.ru/cp_m/cp_m} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{Embox}
+\selectlanguageifdefined{english}
+Embox Documentation. \BibDash
+\newblock URL: \BibUrl{https://non-descriptive.github.io/embox-mdbook/}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{Nand2Tetris}
+\selectlanguageifdefined{english}
+From Nand to Tetris. \BibDash
+\newblock URL: \BibUrl{https://www.nand2tetris.org/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{GNUMes}
+\selectlanguageifdefined{english}
+GNU Mes. \BibDash
+\newblock URL: \BibUrl{https://www.gnu.org/software/mes/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{LCC}
+\selectlanguageifdefined{english}
+Little C Compiler. \BibDash
+\newblock URL: \BibUrl{https://github.com/drh/lcc} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{MicroDOS}
+\selectlanguageifdefined{english}
+MicroDOS. \BibDash
+\newblock URL: \BibUrl{https://ru.wikipedia.org/wiki/MicroDOS} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{Minix}
+\selectlanguageifdefined{english}
+Minix QD. \BibDash
+\newblock URL: \BibUrl{https://github.com/davidgiven/minix2} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{UltraEmbedded}
+\selectlanguageifdefined{english}
+RISC-V Core. \BibDash
+\newblock URL: \BibUrl{https://github.com/ultraembedded/riscv} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{RISCV}
+\selectlanguageifdefined{english}
+RISC-V International. \BibDash
+\newblock URL: \BibUrl{https://riscv.org/about/faq/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{TinyCC}
+\selectlanguageifdefined{english}
+Tiny C Compiler. \BibDash
+\newblock URL:
+  \BibUrl{https://www.iro.umontreal.ca/~felipe/IFT2030-Automne2002/Complements/tinyc.c}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{MIPS}
+\selectlanguageifdefined{english}
+Wave Computing Closes Its MIPS Open Initiative. \BibDash
+\newblock URL:
+  \BibUrl{https://www.hackster.io/news/wave-computing-closes-its-mips-open-initiative-with-immediate-effect-zero-warning-e88b0df9acd0}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{Xv6}
+\selectlanguageifdefined{english}
+XV6 как ОС для обучения. \BibDash
+\newblock URL: \BibUrl{https://habr.com/ru/articles/597153/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{SICXE}
+\selectlanguageifdefined{english}
+Архитектура SIC / XE. \BibDash
+\newblock URL: \BibUrl{https://progler.ru/blog/arhitektura-sic-xe} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{fstlinux}
+\selectlanguageifdefined{english}
+Вся история Linux. \BibDash
+\newblock URL: \BibUrl{https://habr.com/p/441554/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{itGrant}
+\selectlanguageifdefined{english}
+Гранты на внедрение российских решений в
+  сфере информационных технологий. \BibDash
+\newblock URL:
+  \BibUrl{https://rfrit.ru/support-measure/grants/grant-na-vnedrenie-rossiiskii-it-reshenii/}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{V6}
+\selectlanguageifdefined{english}
+Исследовательский UNIX. \BibDash
+\newblock URL:
+  \BibUrl{https://dit.isuct.ru/IVT/BOOKS/OPERATING_SYSTEMS/OPER7/GLAVA_4.HTM}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{LMC}
+\selectlanguageifdefined{english}
+Компьютер маленького человечка. \BibDash
+\newblock URL: \BibUrl{https://habr.com/p/257331/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{E14}
+\selectlanguageifdefined{english}
+Многопроцессорный учебный компьютер "Е14".
+  \BibDash
+\newblock URL: \BibUrl{https://emc.orgfree.com/e14/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{ourcomputer}
+\selectlanguageifdefined{english}
+Модель учебной ЭВМ. \BibDash
+\newblock URL: \BibUrl{https://emc.orgfree.com/model/} ({дата
+  обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{elStatistic}
+\selectlanguageifdefined{english}
+ОТЧЕТ ПО РЕЗУЛЬТАТАМ МОНИТОРИНГА
+  (ИССЛЕДОВАНИЯ) РЫНКА ТРУДА В СФЕРЕ
+  МИКРОЭЛЕКТРОНИКИ. \BibDash
+\newblock URL:
+  \BibUrl{pdfhttps://spknano.ru/upload/\%D0\%9E\%D1\%82\%D1\%87\%D0\%B5\%D1\%82\%20\%D0\%98\%D1\%81\%D0\%BB\%D0\%B5\%D0\%B4\%D0\%BE\%D0\%B2\%D0\%B0\%D0\%BD\%D0\%B8\%D0\%B5\%20\%D1\%80\%D1\%8B\%D0\%BD\%D0\%BA\%D0\%B0\%20\%D1\%82\%D1\%80\%D1\%83\%D0\%B4\%D0\%B0\%20\%D0\%BD\%D0\%B0\%20\%D1\%81\%D0\%B0\%D0\%B9\%D1\%82.pdf}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\bibitem{osIncrese}
+\selectlanguageifdefined{english}
+Операционные системы (рынок России). \BibDash
+\newblock URL:
+  \BibUrl{https://www.tadviser.ru/index.php/\%D0\%A1\%D1\%82\%D0\%B0\%D1\%82\%D1\%8C\%D1\%8F:\%D0\%9E\%D0\%BF\%D0\%B5\%D1\%80\%D0\%B0\%D1\%86\%D0\%B8\%D0\%BE\%D0\%BD\%D0\%BD\%D1\%8B\%D0\%B5_\%D1\%81\%D0\%B8\%D1\%81\%D1\%82\%D0\%B5\%D0\%BC\%D1\%8B_(\%D1\%80\%D1\%8B\%D0\%BD\%D0\%BE\%D0\%BA_\%D0\%A0\%D0\%BE\%D1\%81\%D1\%81\%D0\%B8\%D0\%B8)}
+  ({дата обращения}: \DTMdate{2026-05-14}).
+
+\end{thebibliography}

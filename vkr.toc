@@ -1,0 +1,75 @@
+\xpginauxfiletrue 
+\selectlanguage *{russian}
+\contentsline {section}{Введение}{5}{section*.2}%
+\contentsline {section}{\numberline {1}Постановка задачи}{8}{section.1}%
+\contentsline {section}{\numberline {2}Анализ предметной области}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Открытые архитектуры центральных процессоров}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Легковесные UNIX‑подобные операционные системы}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Компактные компиляторы языка Си}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Учебные компьютерные платформы: от Nand2Tetris до FPGA‑курсов}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Выводы и требования к учебному стенду}{17}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Архитектура программного комплекса}{19}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Назначение комплекса}{19}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Компонентная структура}{20}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Сценарий работы}{22}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Технологический стек и платформа}{23}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Базовые архитектурные решения}{23}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Реализация компонентов комплекса}{26}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Разработка синтезируемого ядра RISC‑V RV32I на SystemVerilog}{26}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Моделируемая вычислительная платформа: память, периферия, загрузчик}{32}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Адаптация и сборка операционной системы xv6}{35}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Адаптация и интеграция компилятора TinyCC}{39}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Инфраструктура воспроизводимой сборки и отладки}{40}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Тестирование, верификация и методическое обеспечение}{45}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Методика тестирования и конфигурация стенда}{45}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Результаты функционального тестирования и верификации}{47}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Учебно‑методические материалы}{48}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Заключение}{50}{section.6}%
+\contentsline {section}{Список литературы}{52}{section*.3}%
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{english}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\selectlanguage *{russian}
+\xpginauxfilefalse 
